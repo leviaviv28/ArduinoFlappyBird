@@ -35,6 +35,7 @@ typedef struct {
   int h;
   int y_vel;
   int score;
+  bool dead;
 }Player;
 
 
@@ -52,7 +53,11 @@ void clear_pipes();
 void draw_player();
 void clear_player();
 void draw_ground();
+bool collision();
+void awardScore();
 void gameLoop();
+void resetGame();
+void resetGraphics();
 void pipePhysics();
 void player_physics();
 #endif // _Flappy_H    // Put this line at the end of your file.
