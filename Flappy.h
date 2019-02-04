@@ -1,5 +1,5 @@
-#ifndef _Flappy_H    // Put these two lines at the top of your file.
-#define _Flappy_H    // (Use a suitable name, usually based on the file name.)
+#ifndef _Flappy_H
+#define _Flappy_H
 
 // Colours
 #define BLACK   0x0000
@@ -13,10 +13,10 @@
 #define RED     0xF208
 #define ORANGE  0xFBA0
 //Pins
-#define YP A2  // must be an analog pin, use "An" notation!
-#define XM A3  // must be an analog pin, use "An" notation!
-#define YM 8   // can be a digital pin
-#define XP 9   // can be a digital pin
+#define YP A2
+#define XM A3
+#define YM 8
+#define XP 9
 //Touchscreen Values
 #define TS_MINX 130
 #define TS_MAXX 905
@@ -60,4 +60,4 @@ void resetGame();
 void resetGraphics();
 void pipePhysics();
 void player_physics();
-#endif // _Flappy_H    // Put this line at the end of your file.
+#endif
